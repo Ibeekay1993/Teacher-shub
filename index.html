@@ -3,32 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Resources Hub - Home</title>
+    <title>EduConnect - Your Teaching Resource Hub</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <nav class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="EduConnect Logo">
+                <span>EduConnect</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="jobs.html">Job Vacancies</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html" class="btn btn-secondary">Login</a></li>
+                <li><a href="register.html" class="btn btn-primary">Register</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="home">
-            <h1>Welcome to Teacher Resources Hub</h1>
-            <p>Find lesson plans, worksheets, and job opportunities all in one place!</p>
+        <section id="hero" class="container">
+            <div class="hero-content">
+                <h1>Empower Your Teaching Journey</h1>
+                <p>Discover resources, connect with opportunities, and elevate your teaching career with EduConnect.</p>
+                <a href="resources.html" class="btn btn-primary">Explore Resources</a>
+                <a href="jobs.html" class="btn btn-secondary">Find Jobs</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Teacher and students">
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <h2>Why Choose EduConnect?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Extensive Resource Library</h3>
+                    <p>Access thousands of lesson plans and worksheets across all subjects and grade levels.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Career Opportunities</h3>
+                    <p>Find your dream teaching job with our comprehensive job board.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Community Support</h3>
+                    <p>Connect with fellow educators and share experiences in our vibrant community.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="container">
+            <h2>Ready to Transform Your Teaching Experience?</h2>
+            <p>Join thousands of educators who are already benefiting from EduConnect.</p>
+            <a href="register.html" class="btn btn-primary">Get Started Now</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Teacher Resources Hub. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 EduConnect. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
