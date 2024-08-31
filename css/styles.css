@@ -1,11 +1,13 @@
 /* Global Styles */
 :root {
-    --primary-color: #4a90e2;
-    --secondary-color: #50c878;
-    --accent-color: #ff6b6b;
-    --background-color: #f8f9fa;
-    --text-color: #333333;
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --background-color: #ecf0f1;
+    --text-color: #34495e;
     --light-text-color: #ffffff;
+    --card-background: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -29,8 +31,8 @@ body {
 
 /* Header Styles */
 header {
-    background-color: var(--light-text-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--card-background);
+    box-shadow: 0 2px 10px var(--shadow-color);
     position: fixed;
     width: 100%;
     top: 0;
@@ -97,7 +99,7 @@ nav {
 }
 
 .btn-primary:hover {
-    background-color: #3a7bd5;
+    background-color: #2980b9;
     transform: translateY(-2px);
 }
 
@@ -107,7 +109,17 @@ nav {
 }
 
 .btn-secondary:hover {
-    background-color: #45b36b;
+    background-color: #27ae60;
+    transform: translateY(-2px);
+}
+
+.btn-accent {
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+}
+
+.btn-accent:hover {
+    background-color: #c0392b;
     transform: translateY(-2px);
 }
 
@@ -156,6 +168,8 @@ h2 {
 .hero-image img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px var(--shadow-color);
 }
 
 /* Features Section Styles */
@@ -167,16 +181,17 @@ h2 {
 }
 
 .feature-card {
-    background-color: var(--light-text-color);
+    background-color: var(--card-background);
     border-radius: 8px;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 6px 12px var(--shadow-color);
 }
 
 .feature-card i {
@@ -191,21 +206,22 @@ h2 {
     color: var(--light-text-color);
     text-align: center;
     padding: 4rem 0;
+    border-radius: 10px;
+    margin: 2rem 0;
 }
 
 #cta h2 {
     color: var(--light-text-color);
 }
 
-#cta .btn-primary {
-    background-color: var(--light-text-color);
-    color: var(--primary-color);
+#cta .btn-accent {
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
     margin-top: 1rem;
 }
 
-#cta .btn-primary:hover {
-    background-color: var(--accent-color);
-    color: var(--light-text-color);
+#cta .btn-accent:hover {
+    background-color: #c0392b;
 }
 
 /* Footer Styles */
